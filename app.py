@@ -84,11 +84,5 @@ data.loc[predicciones.sum(axis=1) == 0, 'Prediccion']=estados[0]
 st.subheader('Resultado')
 st.write(data)
 
-#Error del conjunto de prueba guardado con el modelo
-st.warning(f'El modelo tiene un error del {error:.2%} en el conjunto de prueba (30%).')
-
-
-st.write(data)
-
 #Porcentaje de error de clasificación medido sobre el 30% de prueba
 st.warning(f'El modelo tiene un error del {error:.2%} en el conjunto de prueba (30%).')
